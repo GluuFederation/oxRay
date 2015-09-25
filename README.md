@@ -77,7 +77,6 @@ Following steps are necessary, to obtain client id and client secret that will b
 8. Enter Client Name: Liferay App
 	* You can choose any name here. 
 9. All other options can be left as DEFAULT
-
 Please see the attached screenshot..  
 ![client_registration](https://raw.githubusercontent.com/GluuFederation/oxRay/master/img/dynamic_client_registration_screen1.jpg)
 
