@@ -23,13 +23,12 @@ Plugin is provided in 2 variant maven and ant. You can either use maven or lifer
 
 Prerequisite: Make sure you have maven installed on your system to build this plugin.
  
- 1. Checkout maven source from [oxRay Repository](https://github.com/Gluufederation/oxRay/6.2.x/maven)
+1. Checkout maven source from [oxRay Repository](https://github.com/Gluufederation/oxRay/6.2.x/maven)
 
- 2. Open pom.xml in gluu-openid-connect-hook and update your local liferay tomcat bundle path. This is required for building `war` file and deploying to liferay tomcat bundle.  
-
+2. Open pom.xml in gluu-openid-connect-hook and update your local liferay tomcat bundle path. This is required for building `war` file and deploying to liferay tomcat bundle.  
 ![configure_pom_xml](https://raw.githubusercontent.com/GluuFederation/oxRay/master/img/configure_pom_xml.jpg)
 
- 3. Goto command prompt - under gluu\6.2.x\maven\gluu-openid-connect-hook directory and Run
+3. Goto command prompt - under gluu\6.2.x\maven\gluu-openid-connect-hook directory and Run
      `mvn clean install package liferay:deploy` 
 
 This will take few seconds to download the dependency `jar` files and generate liferay compiled deployable `war` file which will be placed within your <liferay-bundle-folder>/deploy directory and hot deployable process will start.
@@ -38,9 +37,9 @@ This will take few seconds to download the dependency `jar` files and generate l
 
 Prerequisite: Assume you have plugin sdk installed and configured with liferay bundle.
 
- 1.  checkout the gluu-openid-connect-hook plugin src from repository and place in your local plugin-sdk under `\liferay-plugins-sdk-6.2.0-ce-ga1\hooks` directory. 
+1.  checkout the gluu-openid-connect-hook plugin src from repository and place in your local plugin-sdk under `\liferay-plugins-sdk-6.2.0-ce-ga1\hooks` directory. 
 
- 2. Goto command prompt inside `\liferay-plugins-sdk-6.2.0-ce-ga1\hooks\gluu-openid-connect-hook` and run following command 
+2. Goto command prompt inside `\liferay-plugins-sdk-6.2.0-ce-ga1\hooks\gluu-openid-connect-hook` and run following command 
 
     `ant clean deploy`
 
@@ -79,13 +78,12 @@ Following steps are necessary, to obtain client id and client secret that will b
 	* You can choose any name here. 
 9. All other options can be left as DEFAULT
 
-Please refer the attached screenshot..  
-
+Please see the attached screenshot..  
 ![client_registration](https://raw.githubusercontent.com/GluuFederation/oxRay/master/img/dynamic_client_registration_screen1.jpg)
 
 10. Click `Submit` and the following `Registration Request` and `Registration Response` will appear.
-
 ![json-request-response](https://raw.githubusercontent.com/GluuFederation/oxRay/master/img/json-request-response.jpg)
+
 11. Save the Registration Response to your local system. Parameters `client_id` and `client_secret` is used in Liferay when configuring `portal-ext.properties`. 
 #### Modifying portal.properties
 
