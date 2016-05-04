@@ -1,4 +1,4 @@
-**Note: this project has not been maintained. In order to get SSO to your Magento site using the Gluu Server, please check out our [oxD Magento Extension](https://gluu.org/docs-oxd/plugin/php/cms/magento/). 
+**Note:** this project has not been maintained. In order to get SSO to your Magento site using the Gluu Server, please check out our [oxD Magento Extension](https://gluu.org/docs-oxd/plugin/php/cms/magento/). 
 
 # oxRay
 LifeRay OpenID Connect plugin for oxAuth
